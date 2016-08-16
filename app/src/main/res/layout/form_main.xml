@@ -13,16 +13,19 @@
         android:paddingRight="6dp"
         android:paddingTop="6dp">
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="New Text"
-            android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:textColor="#000000"
-            android:textSize="10dp"
-            android:layout_weight="0.9" />
+            android:layout_weight="0.9">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstContent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -33,20 +36,23 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Next Activity"
-                android:id="@+id/btnNext"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="0.5" />
+                android:text="Request"
+                android:id="@+id/btnRequest"
+                android:layout_weight="0.3" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Show Data"
-                android:id="@+id/btnsetData"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="0.5" />
+                android:text="New Task"
+                android:id="@+id/btnNewTask"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Button"
+                android:id="@+id/button2"
+                android:layout_weight="0.3" />
         </LinearLayout>
 
     </LinearLayout>
